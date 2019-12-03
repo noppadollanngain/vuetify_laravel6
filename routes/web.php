@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/vuetify/{any}', function() {
+ return view('vuetify');
+})->where('any','.*');
